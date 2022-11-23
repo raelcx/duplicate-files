@@ -42,7 +42,7 @@ if __name__ == "__main__":
                           "mp4", "jpg", "jpeg", "png", "xls", "xlsx",
                           "xml", "vsd", "py", "json", "docx", "xlsx",
                           "xls", "eml", "zip", "rar", "mpeg", "mp3", "txt",
-                          "doc", "ofx", "ico"
+                          "doc", "ofx", "ico", "exe", "msi"
                           ]
 
     # Navega por todas as subtastas e arquivos dentro do diretório informado
