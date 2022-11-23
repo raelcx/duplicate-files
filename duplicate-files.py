@@ -59,10 +59,10 @@ if __name__ == "__main__":
     duplicate_files = (
         val for key, val in md5_dict.items() if len(val) > 1)
 
-    # Escreve a lista de arquivos duplicados em um arquivo CSV
-    with open("duplicates.csv", "w") as log:
+    # Abre e escreve a lista de arquivos duplicados em um arquivo CSV
+    with open("duplicates.csv", "w", newline='', encoding='UTF-8') as log:
         # Terminador de linha adicionado pra Windows, senão ele insere linhas em branco...
-        csv_writer = csv.writer(log, quoting=csv.QUOTE_MINIMAL, delimiter=",",
+        csv_writer = csv.writer(log, quoting=csv.QUOTE_NONE, delimiter=",",
                                 lineterminator="\n")
         header = ["Nomes dos arquivos"]
         csv_writer.writerow(header)
