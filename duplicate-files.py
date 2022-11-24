@@ -9,7 +9,7 @@ import hashlib
 from collections import defaultdict
 import csv
 
-src_folder = "../../" # Pasta raíz onde a checagem vai iniciar
+src_folder = ".../.../..." # Pasta raíz onde a checagem vai iniciar
 
 
 def generate_md5(fname, chunk_size=1024):
@@ -62,8 +62,7 @@ if __name__ == "__main__":
     # Abre e escreve a lista de arquivos duplicados em um arquivo CSV
     with open("duplicates.csv", "w", newline='', encoding='UTF-8') as log:
         # Terminador de linha adicionado pra Windows, senão ele insere linhas em branco...
-        csv_writer = csv.writer(log, quoting=csv.QUOTE_NONE, delimiter=",",
-                                lineterminator="\n")
+        csv_writer = csv.writer(log, quoting=csv.QUOTE_NONE, delimiter=",", lineterminator="\n", escapechar="\'")
         header = ["Nomes dos arquivos"]
         csv_writer.writerow(header)
 

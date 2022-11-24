@@ -1,6 +1,8 @@
+# Work in progress
 import csv
+import os
 
-with open("C:/Users/israel.carvalho/duplicates.csv", "r", newline='', encoding='UTF-8') as csv_file:
+with open(".../.../duplicates.csv", "r", newline='', encoding='UTF-8') as csv_file:
     reader = list(csv.reader(csv_file, delimiter=",", lineterminator="\n"))
     lines = range(1, len(reader))
     index = 1
