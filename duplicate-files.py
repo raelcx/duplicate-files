@@ -55,7 +55,7 @@ if __name__ == "__main__":
                 # Se existem outros arquivos com o mesmo checksum, adiciona pra lista
                 md5_dict[generate_md5(file_path)].append(file_path)
 
-    # Identifica os checksum's contendo mais de um valor (nomes de arquivos)
+    # Identifica os checksum's contendo mais de um valor
     duplicate_files = (
         val for key, val in md5_dict.items() if len(val) > 1)
 
