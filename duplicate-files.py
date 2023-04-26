@@ -40,9 +40,10 @@ if __name__ == "__main__":
     # Tipos de arquivos para a checagem
     file_types_inscope = ["ppt", "pptx", "pdf", "txt", "html",
                           "mp4", "jpg", "jpeg", "png", "xls", "xlsx",
-                          "xml", "vsd", "py", "json", "docx", "xlsx",
-                          "xls", "eml", "zip", "rar", "mpeg", "mp3", "txt",
-                          "doc", "ofx", "ico", "exe", "msi"
+                          "xml", "vsd", "py", "json", "docx", "txt",
+                          "xls", "eml", "zip", "rar", "mpeg", "mp3",
+                          "doc", "ofx", "ico", "exe", "msi", "lnk", "bck",
+                          "iso","avi","ods","pfx"
                           ]
 
     # Navega por todas as subtastas e arquivos dentro do diretório informado
