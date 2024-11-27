@@ -18,9 +18,7 @@ def generate_md5(fname, chunk_size=1024):
     """
     hash = hashlib.md5()
     with open(fname, "rb") as f:
-        # Lê o primeiro bloco do arquivo
         chunk = f.read(chunk_size)
-        # Continua lendo o arquivo até o final e atualiza o hash quando acabar
         while chunk:
             hash.update(chunk)
             chunk = f.read(chunk_size)
